@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.smartap.OnOffActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="16dp"
+            android:onClick="button_click"
+            android:text="Disabled all switch" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/switch1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="1번 전원"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:checked="false"
+                android:onClick="onSwitchClicked"
+                android:showText="true"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg"
+                tools:checked="false" />
+
+            <TextView
+                android:layout_below="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/switch2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="2번 전원"/>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/switch1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:onClick="onSwitchClicked"
+                android:showText="true"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+
+            <TextView
+                android:layout_below="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/switch3"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="3번 전원"/>
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/switch2"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:onClick="onSwitchClicked"
+                android:showText="true"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+
+            <TextView
+                android:layout_below="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/switch4"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="4번 전원"/>
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/switch3"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:onClick="onSwitchClicked"
+                android:showText="true"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+
+            <TextView
+                android:layout_below="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/switch5"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="전체 전원"/>
+
+            <Switch
+                android:id="@+id/switch5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/switch4"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:onClick="onSwitchClicked"
+                android:showText="true"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
